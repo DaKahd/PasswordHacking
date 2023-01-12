@@ -11,10 +11,12 @@ def checkPassword():
         guess = random.choice(alphabet)
         if guess == password:
             print("login correct")
+            print(guess)
             check = "correct"
+        if guess != password:
+            print("login incorrect")
+            print(guess)
     
 while check != "correct":
     check = "incorrect"
     checkPassword()
-    print(guess)
-
